@@ -1,7 +1,6 @@
 # To Do List 
 
-
-
+<img src = "https://github.com/imjjaney/CodingNoona-study-todolist/assets/170174405/40e87d5e-cc49-48d2-b813-7749133632f4" width = "500"/>
 
 
 

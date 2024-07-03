@@ -34,24 +34,23 @@ h1 {
 .input-area {
   position : relative; 
   margin : 0 0 30px; 
+  height : 1.5rem; 
 }
 
 .input-area button {
-  background: transparent;
-  color : white; 
-  font-weight: bolder; 
-  height : 2rem; 
   margin : 0 5px;
+  color : white; 
+  background-color: transparent;
+  border : none; 
 }
 
 .input-area button:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 .input-area input {
   width : 60% ; 
   border : none;
-  height : 2rem; 
   padding : 0 0 0 10px; 
   flex-grow: 1;
   box-sizing : border-box ; 

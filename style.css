@@ -5,6 +5,8 @@
 body {
   margin : 0; 
   background-image: url("./images/background-black.jpg"); 
+  background-repeat: no-repeat;
+  background-size: cover;
   min-height : 100vh; 
   color : white; 
   font-weight: bolder;
@@ -12,7 +14,7 @@ body {
 
 .main-container {
   border : 1px solid white; 
-  background-color: black; 
+  background-color: #323232; 
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   position : absolute ; 
   top : 50%;

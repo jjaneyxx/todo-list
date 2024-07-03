@@ -41,7 +41,7 @@ function render() {
           <div class = "task-done">${taskList[i].taskContent}</div>
           <div class="button-area">
             <button onclick = "itemComplete('${taskList[i].id}')"><i class="fa-solid fa-arrow-rotate-right"></i></button>
-            <button><i class="fa-solid fa-trash"></i></button>  
+            <button onclick = "deleteItem('${taskList[i].id}')"><i class="fa-solid fa-trash"></i></button>  
           </div>
         </div>`;
     } else {
@@ -50,7 +50,7 @@ function render() {
     <div>${taskList[i].taskContent}</div>
     <div class="button-area">
       <button onclick = "itemComplete('${taskList[i].id}')"><i class="fa-solid fa-check"></i></button>
-      <button><i class="fa-solid fa-trash"></i></button>  
+      <button onclick = "deleteItem('${taskList[i].id}')"><i class="fa-solid fa-trash"></i></button>  
     </div>
   </div>`;
     }
@@ -64,6 +64,17 @@ function itemComplete(id) {
   for (let i = 0; i < taskList.length; i++) {
     if (id === taskList[i].id) {
       taskList[i].isComplete = !taskList[i].isComplete;
+      break;
+    }
+  }
+  render();
+}
+
+function deleteItem(id) {
+  console.log(`삭제한다 ${id}`);
+  for (let i = 0; i < taskList.length; i++) {
+    if (taskList[i].id === id) {
+      taskList.splice(i, 1);
       break;
     }
   }

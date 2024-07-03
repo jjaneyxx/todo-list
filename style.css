@@ -10,6 +10,7 @@ body {
   min-height : 100vh; 
   color : white; 
   font-weight: bolder;
+  font-family : 'NanumSquare', sans-serif;
 }
 
 .main-container {
@@ -40,8 +41,7 @@ h1 {
   color : white; 
   font-weight: bolder; 
   height : 2rem; 
-  margin : 0 5px; 
-
+  margin : 0 5px;
 }
 
 .input-area button:hover {
@@ -53,6 +53,8 @@ h1 {
   border : none;
   height : 2rem; 
   padding : 0 0 0 10px; 
+  flex-grow: 1;
+  box-sizing : border-box ; 
 }
 
 #add-button {

@@ -4,7 +4,6 @@
 
 body {
   margin : 0; 
-  font-family : 'NanumSquare', sans-serif;
   background-image: url("./images/background-black.jpg"); 
   min-height : 100vh; 
   color : white; 
@@ -37,7 +36,6 @@ h1 {
 .input-area button {
   background: transparent;
   color : white; 
-  border : 1px solid white; 
   font-weight: bolder; 
   height : 2rem; 
   margin : 0 5px; 
@@ -49,9 +47,10 @@ h1 {
 }
 
 .input-area input {
-  width : 50% ; 
+  width : 60% ; 
   border : none;
   height : 2rem; 
+  padding : 0 0 0 10px; 
 }
 
 #add-button {
@@ -93,7 +92,7 @@ h1 {
 /* 모바일 */
 @media screen and (max-width : 480px){
   body {
-    font-size : 0.5em; 
+    font-size : 10px; 
   }
 
   #under-line {

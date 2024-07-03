@@ -13,6 +13,7 @@ taskInput.addEventListener("keyup", (event) => {
   if (event.key === "Enter") {
     // 엔터키의 key 값 : "Enter"
     addTask();
+    taskInput.value = "";
   }
 });
 

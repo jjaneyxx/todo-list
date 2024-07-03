@@ -17,25 +17,55 @@ taskInput.addEventListener("keyup", (event) => {
 });
 
 function addTask() {
-  let taskContent = taskInput.value;
-  taskList.push(taskContent);
+  let task = {
+    id: randomIDGenerate(),
+    taskContent: taskInput.value,
+    isComplete: false, // 미완료 (default)
+  };
+  taskList.push(task);
   console.log(taskList);
   render();
+}
+
+function randomIDGenerate() {
+  return "_" + Math.random().toString(36).substr(2, 9);
 }
 
 function render() {
   let resultHTML = "";
   for (let i = 0; i < taskList.length; i++) {
-    resultHTML += `<div class="task">
-          <div>${taskList[i]}</div>
+    if (taskList[i].isComplete === true) {
+      // task 가 완료되었다면
+      resultHTML += `<div class="task">
+          <div class = "task-done">${taskList[i].taskContent}</div>
           <div class="button-area">
-            <button>Done</button>
+            <button onclick = "itemComplete('${taskList[i].id}')">Done</button>
             <button>Delete</button>  
           </div>
         </div>`;
+    } else {
+      resultHTML += `<div class="task">
+    <div>${taskList[i].taskContent}</div>
+    <div class="button-area">
+      <button onclick = "itemComplete('${taskList[i].id}')">Done</button>
+      <button>Delete</button>  
+    </div>
+  </div>`;
+    }
   }
 
   document.getElementById("task-area").innerHTML = resultHTML;
+}
+
+function itemComplete(id) {
+  // 선택된 아이템에 따라 그 아이템을 찾는다
+  for (let i = 0; i < taskList.length; i++) {
+    if (id === taskList[i].id) {
+      taskList[i].isComplete = !taskList[i].isComplete;
+      break;
+    }
+  }
+  render();
 }
 
 function deleteAll() {

@@ -65,13 +65,13 @@ h1 {
 
 .tab-area {
   display : flex; 
-  justify-content: space-around;
   border : 1px solid white; 
-  position : relative
+  position : relative;
 }
 
 .tab-area div {
   cursor: pointer;
+  padding : 0 10px ; 
 }
 
 .tab-task-area {
@@ -89,7 +89,7 @@ h1 {
   height : 3px;
   background-color: snow;
   position: absolute;
-  width : 33%; 
+  width : 6%;  
   left : 0px; 
   top: 22px; 
   padding : 0px; 
@@ -102,12 +102,22 @@ h1 {
   }
 
   #under-line {
-    top : 21px; 
     height : 1.5px;
     background-color: snow; 
     position: absolute;
-    width : 33%; 
+    width : 20%;  
     top: 13px; 
+  }
+}
+
+@media screen and (min-width : 481px) and (max-width : 1439px){
+
+  #under-line { 
+    height : 3px; 
+    background-color: snow; 
+    position: absolute;
+    width : 12%;  
+    top: 22px; 
   }
 }
 

@@ -40,16 +40,16 @@ function render() {
       resultHTML += `<div class="task">
           <div class = "task-done">${taskList[i].taskContent}</div>
           <div class="button-area">
-            <button onclick = "itemComplete('${taskList[i].id}')">Done</button>
-            <button>Delete</button>  
+            <button onclick = "itemComplete('${taskList[i].id}')"><i class="fa-solid fa-check"></i></button>
+            <button><i class="fa-solid fa-trash"></i></button>  
           </div>
         </div>`;
     } else {
       resultHTML += `<div class="task">
     <div>${taskList[i].taskContent}</div>
     <div class="button-area">
-      <button onclick = "itemComplete('${taskList[i].id}')">Done</button>
-      <button>Delete</button>  
+      <button onclick = "itemComplete('${taskList[i].id}')"><i class="fa-solid fa-check"></i></button>
+      <button><i class="fa-solid fa-trash"></i></button>  
     </div>
   </div>`;
     }

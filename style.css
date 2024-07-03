@@ -86,8 +86,8 @@ h1 {
 }
 
 #under-line {
-  height : 4px;
-  background-color: white; 
+  height : 3px;
+  background-color: snow;
   position: absolute;
   width : 33%; 
   left : 0px; 
@@ -103,8 +103,8 @@ h1 {
 
   #under-line {
     top : 20px; 
-    height : 3px;
-    background-color: white; 
+    height : 1.5px;
+    background-color: snow; 
     position: absolute;
     width : 33%; 
     top: 13px; 

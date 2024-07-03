@@ -40,8 +40,8 @@ function render() {
       resultHTML += `<div class="task-grey">
           <div class = "task-done">${taskList[i].taskContent}</div>
           <div class="button-area">
-            <button onclick = "itemComplete('${taskList[i].id}')"><i class="fa-solid fa-arrow-rotate-right"></i></button>
-            <button onclick = "deleteItem('${taskList[i].id}')"><i class="fa-solid fa-trash"></i></button>  
+            <button onclick = "itemComplete('${taskList[i].id}')" class = "done-button"><i class="fa-solid fa-arrow-rotate-right"></i></button>
+            <button onclick = "deleteItem('${taskList[i].id}')" class = "delete-button"><i class="fa-solid fa-trash"></i></button>  
           </div>
         </div>`;
     } else {
@@ -49,8 +49,8 @@ function render() {
       resultHTML += `<div class="task">
     <div>${taskList[i].taskContent}</div>
     <div class="button-area">
-      <button onclick = "itemComplete('${taskList[i].id}')"><i class="fa-solid fa-check"></i></button>
-      <button onclick = "deleteItem('${taskList[i].id}')"><i class="fa-solid fa-trash"></i></button>  
+      <button onclick = "itemComplete('${taskList[i].id}')" class = "done-button"><i class="fa-solid fa-check"></i></button>
+      <button onclick = "deleteItem('${taskList[i].id}')" class = "delete-button"><i class="fa-solid fa-trash"></i></button>  
     </div>
   </div>`;
     }

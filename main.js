@@ -37,14 +37,15 @@ function render() {
   for (let i = 0; i < taskList.length; i++) {
     if (taskList[i].isComplete === true) {
       // task 가 완료되었다면
-      resultHTML += `<div class="task">
+      resultHTML += `<div class="task-grey">
           <div class = "task-done">${taskList[i].taskContent}</div>
           <div class="button-area">
-            <button onclick = "itemComplete('${taskList[i].id}')"><i class="fa-solid fa-check"></i></button>
+            <button onclick = "itemComplete('${taskList[i].id}')"><i class="fa-solid fa-arrow-rotate-right"></i></button>
             <button><i class="fa-solid fa-trash"></i></button>  
           </div>
         </div>`;
     } else {
+      // task 가 완료되지 않음
       resultHTML += `<div class="task">
     <div>${taskList[i].taskContent}</div>
     <div class="button-area">

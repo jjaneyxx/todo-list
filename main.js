@@ -27,14 +27,18 @@ taskInput.addEventListener("keyup", (event) => {
 });
 
 function addTask() {
-  let task = {
-    id: randomIDGenerate(),
-    taskContent: taskInput.value,
-    isComplete: false, // 미완료 (default)
-  };
-  taskList.push(task);
-  console.log(taskList);
-  render();
+  if (taskInput.value === "") {
+    alert("할 일을 입력하세용");
+  } else {
+    let task = {
+      id: randomIDGenerate(),
+      taskContent: taskInput.value,
+      isComplete: false, // 미완료 (default)
+    };
+    taskList.push(task);
+    console.log(taskList);
+    render();
+  }
 }
 
 function randomIDGenerate() {

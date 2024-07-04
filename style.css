@@ -95,7 +95,7 @@ h1 {
   top: 2em; 
   left : 8%;  
   padding : 0px;  
-  transition: left 0.3s ease; /* underline animation */ 
+  transition: left 0.4s ease; /* underline animation */ 
 }
 
 /* 모바일 */

@@ -98,7 +98,7 @@ function deleteItem(id) {
       break;
     }
   }
-  render();
+  filter({ target: { id: mode } });
 }
 
 function deleteAll() {

@@ -67,6 +67,7 @@ h1 {
   display : flex; 
   border : 1px solid white; 
   position : relative;
+  padding : 6px 0 ; 
 }
 
 .tab-area div {
@@ -86,12 +87,12 @@ h1 {
 }
 
 #under-line {
-  height : 3px;
+  height : 2px;
   background-color: snow;
   position: absolute;
   width : 6%;  
-  left : 0px; 
-  top: 22px; 
+  left : 2px; 
+  top: 29px; 
   padding : 0px; 
 }
 
@@ -105,19 +106,21 @@ h1 {
     height : 1.5px;
     background-color: snow; 
     position: absolute;
-    width : 20%;  
-    top: 14px; 
+    width : 30px;  
+    top: 20px; 
+    left : 10px; 
   }
 }
 
 @media screen and (min-width : 481px) and (max-width : 1439px){
 
   #under-line { 
-    height : 3px; 
+    height : 2px; 
     background-color: snow; 
     position: absolute;
-    width : 12%;  
-    top: 22px; 
+    width : 55px; 
+    top: 27px; 
+    left : 7px; 
   }
 }
 

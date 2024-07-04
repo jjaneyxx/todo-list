@@ -65,6 +65,7 @@ h1 {
 
 .tab-area {
   display : flex; 
+  justify-content: space-around; 
   border : 1px solid white; 
   position : relative;
   padding : 6px 0 ; 
@@ -87,40 +88,20 @@ h1 {
 }
 
 #under-line {
-  height : 2px;
   background-color: snow;
   position: absolute;
-  width : 53px;  
-  left : 7px; 
-  top: 29px; 
-  padding : 0px; 
+  height : 2px;
+  width : 16%;   
+  top: 2em; 
+  left : 8%;  
+  padding : 0px;  
+  transition: left 0.6s ease; /* underline animation */ 
 }
 
 /* 모바일 */
 @media screen and (max-width : 480px){
   body {
     font-size : 10px; 
-  }
-
-  #under-line {
-    height : 1.5px;
-    background-color: snow; 
-    position: absolute;
-    width : 30px;  
-    top: 20px; 
-    left : 10px; 
-  }
-}
-
-@media screen and (min-width : 481px) and (max-width : 1439px){
-
-  #under-line { 
-    height : 2px; 
-    background-color: snow; 
-    position: absolute;
-    width : 55px; 
-    top: 27px; 
-    left : 7px; 
   }
 }
 

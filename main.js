@@ -2,6 +2,7 @@ let taskInput = document.getElementById("task-input");
 let addButton = document.getElementById("add-button");
 let deleteButton = document.getElementById("delete-all");
 let tabs = document.querySelectorAll(".tab-area div"); // tab-area 밑 div 를 모두 가져옴
+let underline = document.getElementById("under-line"); // under-line id 가져옴
 let mode = "all";
 let taskList = [];
 let filterList = [];
@@ -114,23 +115,24 @@ function filter(event) {
   if (mode === "all") {
     // 전체 리스트를 보여줌
     // 기존에 만든 내용을 render() 로 불러옴
+    underline.style.left = "calc(8%)";
     render();
   } else if (mode === "proceeding") {
     // task.isComplete === false
     // 진행되어야 하는 아이템
+    underline.style.left = "calc(43%)";
     for (let i = 0; i < taskList.length; i++) {
       if (taskList[i].isComplete === false) {
         filterList.push(taskList[i]);
-        console.log(filterList);
       }
     }
     render();
   } else if (mode === "done") {
     // task.isComplete === true
+    underline.style.left = "calc(77%)";
     for (let i = 0; i < taskList.length; i++) {
       if (taskList[i].isComplete === true) {
         filterList.push(taskList[i]);
-        console.log(filterList);
       }
     }
     render();

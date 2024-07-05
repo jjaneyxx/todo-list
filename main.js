@@ -88,7 +88,7 @@ function itemComplete(id) {
       break;
     }
   }
-  render();
+  filter({ target: { id: mode } }); // 필터링 후 렌더링
 }
 
 function deleteItem(id) {

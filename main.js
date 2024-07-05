@@ -57,7 +57,7 @@ function render() {
   let resultHTML = "";
   for (let i = 0; i < list.length; i++) {
     if (list[i].isComplete === true) {
-      // task 가 완료되었다면
+      // task 가 완료되었다면 : Done 내용
       resultHTML += `<div class="task-grey">
           <div class = "task-done">${list[i].taskContent}</div>
           <div class="button-area">
@@ -66,7 +66,7 @@ function render() {
           </div>
         </div>`;
     } else {
-      // task 가 완료되지 않음
+      // task 가 완료되지 않음 : Proceeding 내용
       resultHTML += `<div class="task">
     <div>${list[i].taskContent}</div>
     <div class="button-area">
@@ -111,7 +111,6 @@ function filter(event) {
   console.log("filter", event.target.id);
   mode = event.target.id;
   filterList = [];
-  doneList = [];
   if (mode === "all") {
     // 전체 리스트를 보여줌
     // 기존에 만든 내용을 render() 로 불러옴

@@ -1,25 +1,30 @@
 # To Do List 
 
-<img src = "https://github.com/imjjaney/CodingNoona-study-todolist/assets/170174405/40e87d5e-cc49-48d2-b813-7749133632f4" width = "500"/>
-
-
+<img src = "https://github.com/imjjaney/CodingNoona-study-todolist/assets/170174405/66807117-e086-4c9c-a554-fb7d660325bb" width = "500"/> 
 
 
 ## About the Project
 
-- 할 일을 추가할 수 있는, 간단한 투두리스트 앱입니다
+- 직관적인 할 일 관리 앱입니다
+- 할 일을 추가하고, 진행 상태를 업데이트 하며, 완료 후에는 삭제할 수 있습니다.
 
 
 
 ## Features
+- 할 일 추가 : 입력창에 할 일을 입력하고 Enter 키 또는 + 버튼을 클릭하여 등록할 수 있습니다.
+- 할 일 삭제 : 휴지통 버튼을 클릭하여 개별 할 일을 삭제할 수 있습니다.
+- 할 일 완료/복원 : V 버튼을 클릭해 할 일을 완료 표시할 수 있고, 화살표 버튼을 다시 누르면 진행 상태로 복원할 수 있습니다.
+- Filtering (tab) 
+  - See All: 전체 할 일을 확인할 수 있습니다.
+  - Proceeding: 진행 중인 할 일을 확인할 수 있습니다.
+  - Done: 완료한 할 일을 확인할 수 있습니다.
+  
 
-- 아직 개발 중입니다 (07.02 ~ )
-
-- **현재까지 추가 개발한 기능들**
-  - 입력창에 할 일을 등록하고 add 버튼을 누르면 할 일이 등록됩니다
-  - X 버튼을 누르면 입력한 할 일들을 전체 삭제 가능합니다
-  - 엔터키로 입력을 받아 할 일 등록을 할 수 있습니다
-  - 입력창에 포커스를 두면, 입력한 내용이 초기화 됩니다
+## User Experience Enhancements 
+- Enter 키 입력 : Enter 키로 할 일을 등록할 수 있습니다.
+- 입력창 초기화 : 입력창에 포커스를 두면 기존 내용이 초기화 됩니다.
+- 전체 삭제 : X 버튼을 클릭하면 전체 할 일을 한꺼번에 삭제할 수 있습니다.
+- 빈 입력창 경고 : 입력창이 비워진 상태로 할 일을 추가하려 하면 경고창이 표시됩니다. 
  
 ## Demo Site
 https://jjaney-todolist.netlify.app/

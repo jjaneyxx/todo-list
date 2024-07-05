@@ -40,6 +40,7 @@ function addTask() {
     console.log(taskList);
     render();
   }
+  filter({ target: { id: mode } });
 }
 
 function randomIDGenerate() {

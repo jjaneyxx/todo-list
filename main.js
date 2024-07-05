@@ -37,10 +37,8 @@ function addTask() {
       isComplete: false, // 미완료 (default)
     };
     taskList.push(task);
-    console.log(taskList);
-    render();
+    filter({ target: { id: mode } });
   }
-  filter({ target: { id: mode } });
 }
 
 function randomIDGenerate() {

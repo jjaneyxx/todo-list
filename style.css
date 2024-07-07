@@ -13,6 +13,15 @@ body {
   font-family : 'NanumSquare', sans-serif;
 }
 
+.headline-container { 
+  display : flex; 
+  justify-content: space-between;
+}
+
+.headline-container button {
+  height : 70%; /* 버튼 높이 지정 */  
+}
+
 .main-container {
   border : 1px solid white; 
   background-color: #323232; 
@@ -127,5 +136,55 @@ h1 {
   background : transparent; 
   color : white; 
   border : none
+}
+
+/* 모달창*/
+#modal-container {
+  position : absolute;
+  left : 0;
+  top: 0; 
+  width : 100%;
+  height : 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+
+  /* 자식 요소 배치 */
+  display : flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal {
+  position : absolute;
+  text-align: center;
+  background-color: white;
+  color : black; 
+  width : 300px; 
+  height : 200px; 
+  padding: 15px;
+}
+
+#modal-container.hidden {
+  display : none; 
+}
+
+.modal-content {
+  position : absolute;
+  top : 50%;
+  left : 50%; 
+  transform: translate(-50%, -50%);
+  display : flex; 
+  align-items: center;
+}
+
+.modal-content button {
+  width : 50%; 
+  white-space : nowrap; /*줄바꿈 장지*/ 
+  margin : 10px; 
+}
+
+#modal-close {
+  position : absolute; 
+  top : 5%; 
+  right : 5%; 
 }
 

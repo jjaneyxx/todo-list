@@ -11,7 +11,10 @@
 </head>
 <body>
   <div class="main-container">
-    <h1>TO DO LIST</h1>
+    <div class="headline-container">
+      <h1>TO DO LIST</h1>
+      <button id="share-modal">공유</button>  
+    </div>
     <section class="input-area">
       <input placeholder="기분 좋은 하루 되세요 ! 🖤" type="text" id="task-input"/> 
       <button id="add-button"><i class="fa-solid fa-plus"></i></button>
@@ -27,6 +30,18 @@
       <div id="task-area">
       </div>
     </section>
+    
+    <!--모달창-->
+    <div id="modal-container" class="hidden">
+      <div id = "modal">
+        <button id="modal-close">X</button>
+        <div class="modal-content">
+          <h4>공유하시겠습니까?</h4>
+          <button>URL 복사하기</button>  
+        </div>
+      </div>
+    </div>
+    
   </div>
   
 

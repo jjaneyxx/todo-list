@@ -3,6 +3,9 @@ let addButton = document.getElementById("add-button");
 let deleteButton = document.getElementById("delete-all");
 let tabs = document.querySelectorAll(".tab-area div"); // tab-area 밑 div 를 모두 가져옴
 let underline = document.getElementById("under-line"); // under-line id 가져옴
+let shareModal = document.getElementById("share-modal");
+let modalContainer = document.getElementById("modal-container");
+let modalClose = document.getElementById("modal-close");
 let mode = "all";
 let taskList = [];
 let filterList = [];
@@ -18,6 +21,19 @@ deleteButton.addEventListener("click", deleteAll);
 taskInput.addEventListener("focus", () => {
   taskInput.value = "";
 });
+shareModal.addEventListener("click", openModal);
+modalClose.addEventListener("click", closeModal);
+
+function openModal() {
+  // display : none 이였던 걸 보이게 해야 함
+  modalContainer.classList.remove("hidden");
+  console.log("모달 열림");
+}
+
+function closeModal() {
+  modalContainer.classList.add("hidden");
+  console.log("모달 닫힘");
+}
 
 taskInput.addEventListener("keyup", (event) => {
   if (event.key === "Enter") {

@@ -103,7 +103,7 @@ function deleteItem(id) {
 
 function deleteAll() {
   taskList = [];
-  render();
+  filter({ target: { id: mode } });
 }
 
 function filter(event) {

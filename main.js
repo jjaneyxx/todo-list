@@ -6,6 +6,7 @@ let underline = document.getElementById("under-line"); // under-line id 가져�
 let shareModal = document.getElementById("share-modal");
 let modalContainer = document.getElementById("modal-container");
 let modalClose = document.getElementById("modal-close");
+let copyUrlButton = document.getElementById("copy-url");
 let mode = "all";
 let taskList = [];
 let filterList = [];
@@ -23,6 +24,7 @@ taskInput.addEventListener("focus", () => {
 });
 shareModal.addEventListener("click", openModal);
 modalClose.addEventListener("click", closeModal);
+copyUrlButton.addEventListener("click", copyUrl);
 
 function openModal() {
   // display : none 이였던 걸 보이게 해야 함
@@ -33,6 +35,19 @@ function openModal() {
 function closeModal() {
   modalContainer.classList.add("hidden");
   console.log("모달 닫힘");
+}
+
+function copyUrl() {
+  const url = window.location.href;
+  console.log(url);
+  navigator.clipboard
+    .writeText(url)
+    .then(() => {
+      alert("URL이 복사되었습니다!");
+    })
+    .catch((error) => {
+      console.log("복사 실패함 :", error);
+    });
 }
 
 taskInput.addEventListener("keyup", (event) => {

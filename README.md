@@ -1,8 +1,6 @@
 # To Do List 
 
-<img src = "https://github.com/user-attachments/assets/bb0b12cb-1d9b-45b8-ad5c-5dee14e22643" width = 500/> 
-
-
+<img src = "https://github.com/user-attachments/assets/76b1ebb3-a5ed-4a83-90fd-4a8c136477e0" width = 500/> 
 
 ## About the Project
 
